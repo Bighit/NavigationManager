@@ -14,6 +14,7 @@
 		05F7009C1D491B4800859860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F7009A1D491B4800859860 /* LaunchScreen.storyboard */; };
 		05F700A71D491B4800859860 /* NavManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F700A61D491B4800859860 /* NavManagerTests.swift */; };
 		05F700B21D491B4800859860 /* NavManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F700B11D491B4800859860 /* NavManagerUITests.swift */; };
+		05F700C01D491C7E00859860 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F700BF1D491C7E00859860 /* NavigationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		05F700AD1D491B4800859860 /* NavManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F700B11D491B4800859860 /* NavManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavManagerUITests.swift; sourceTree = "<group>"; };
 		05F700B31D491B4800859860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F700BF1D491C7E00859860 /* NavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				05F700911D491B4800859860 /* AppDelegate.swift */,
 				05F700931D491B4800859860 /* ViewController.swift */,
+				05F700BF1D491C7E00859860 /* NavigationManager.swift */,
 				05F700951D491B4800859860 /* Main.storyboard */,
 				05F700981D491B4800859860 /* Assets.xcassets */,
 				05F7009A1D491B4800859860 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				05F700941D491B4800859860 /* ViewController.swift in Sources */,
 				05F700921D491B4800859860 /* AppDelegate.swift in Sources */,
+				05F700C01D491C7E00859860 /* NavigationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +486,7 @@
 				05F700B81D491B4800859860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05F700B91D491B4800859860 /* Build configuration list for PBXNativeTarget "NavManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				05F700BB1D491B4800859860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05F700BC1D491B4800859860 /* Build configuration list for PBXNativeTarget "NavManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				05F700BE1D491B4800859860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
