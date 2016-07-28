@@ -13,8 +13,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let vc1=ViewController()
+        let vc2=ViewController1()
+        let nav1=UINavigationController(rootViewController:vc1)
+        let nav2=UINavigationController(rootViewController: vc2)
+        let item1 : UITabBarItem = UITabBarItem (title: "第一页面", image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
+        nav1.tabBarItem = item1
+        let item2 : UITabBarItem = UITabBarItem (title: "第二页面", image: UIImage(named: "tabbar_sort"), selectedImage: UIImage(named: "tabbar_sort_selected"))
+        nav2.tabBarItem = item2
+        let tab = UITabBarController()
+        tab.setViewControllers([nav1,nav2], animated: false)
+       NavigationManager.manager.configWith(tab)
+        window = UIWindow()
+        window!.rootViewController = tab
+        window!.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true
     }
