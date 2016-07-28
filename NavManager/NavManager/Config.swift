@@ -8,5 +8,7 @@
 
 import Foundation
 
-let navigationConfigFileName = "navigationConfig"
 let tabChildViewControllerIdentifier = "UITabBarViewController"
+let navigationConfig =
+    ["ViewController=>ViewController2=>ViewController4",
+     "ViewController2=>ViewController4"]

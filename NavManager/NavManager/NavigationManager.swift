@@ -69,13 +69,6 @@ public class NavigationManager {
         return managerInstance
     }
     
-    public let navigationMapping : NSMutableArray = {
-        let dictionary  = NSMutableArray(contentsOfFile : navigationConfigFileName)
-        if let temp = dictionary {
-            return temp
-        }
-        return NSMutableArray()
-    } ()
     public var nodeDictionary = [String:NavigationNode]()
     
     public func configWith(tabBarController : UITabBarController) {
@@ -102,15 +95,25 @@ public class NavigationManager {
     }
     public func pushWithUIViewController(viewController : UIViewController, animated:Bool){
         
+        if (viewController.node?.nextNodePath) == nil {
+            for configString in navigationConfig {
+                var classArray  = configString.componentsSeparatedByString("=>")
+                for  className in classArray{
+                    print(NSStringFromClass(viewController.classForCoder))
+                    classArray .removeFirst()
+                    if NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"]as! String + "." + className == NSStringFromClass(viewController.classForCoder)  {
+                        viewController.node?.nextNodePath = "=>" + classArray.joinWithSeparator("=>")
+                        break
+                    }
+                }
+            }
+        }
+        
         if let nextNode = viewController.node?.getNextNode(){
             nodeDictionary[nextNode.identifier]=nextNode
             print(nextNode.description())
             viewController.navigationController!.pushViewController(nextNode.viewController!, animated:animated)
-        }else
-        {
-            
         }
-        
     }
     public func popViewControllerWithUIViewController(viewController:UIViewController, to:String="",animated:Bool){
         if let previousNode=viewController.node?.previousNode {

@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.redColor()
         let button = UIButton(frame:CGRectMake(50, 50, 100, 100))
         button.backgroundColor=UIColor.whiteColor()
-            button.addTarget(self, action: "buttonClick", forControlEvents: UIControlEvents.TouchUpInside)
+            button.addTarget(self, action: #selector(ViewController.buttonClick), forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button)
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     func buttonClick() {
-    NavigationManager.manager.configNavigationPathWithString("=>ViewController2=>ViewController4","UITabBarViewController0")
+//    NavigationManager.manager.configNavigationPathWithString("=>ViewController2=>ViewController4","UITabBarViewController0")
         NavigationManager.manager.pushWithUIViewController(self, animated: true)
     }
 
@@ -54,7 +54,7 @@ class ViewController2: UIViewController {
         view.backgroundColor=UIColor.yellowColor()
         let button = UIButton(frame:CGRectMake(50, 50, 100, 100))
         button.backgroundColor=UIColor.whiteColor()
-        button.addTarget(self, action: "buttonClick", forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(ViewController2.buttonClick), forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button)
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -91,7 +91,7 @@ class ViewController4: UIViewController {
         view.backgroundColor=UIColor.blueColor()
         let button = UIButton(frame:CGRectMake(50, 50, 100, 100))
         button.backgroundColor=UIColor.whiteColor()
-        button.addTarget(self, action: "buttonClick", forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(ViewController4.buttonClick), forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button)
         
         // Do any additional setup after loading the view, typically from a nib.
