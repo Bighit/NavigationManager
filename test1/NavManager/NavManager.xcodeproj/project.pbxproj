@@ -15,6 +15,7 @@
 		AD10C7981D4AECB700E909B8 /* NavManagerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AD10C7971D4AECB700E909B8 /* NavManagerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD10C79C1D4AECB700E909B8 /* NavManagerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD10C7951D4AECB700E909B8 /* NavManagerFramework.framework */; };
 		AD10C79D1D4AECB700E909B8 /* NavManagerFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD10C7951D4AECB700E909B8 /* NavManagerFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD10C8F71D4B3D7000E909B8 /* Mix.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C8F61D4B3D7000E909B8 /* Mix.m */; };
 		AD2305561D499A49006EDA12 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2305551D499A49006EDA12 /* Config.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,9 @@
 		AD10C7951D4AECB700E909B8 /* NavManagerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NavManagerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD10C7971D4AECB700E909B8 /* NavManagerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavManagerFramework.h; sourceTree = "<group>"; };
 		AD10C7991D4AECB700E909B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD10C8F41D4B3D6F00E909B8 /* NavManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NavManager-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD10C8F51D4B3D7000E909B8 /* Mix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mix.h; sourceTree = "<group>"; };
+		AD10C8F61D4B3D7000E909B8 /* Mix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mix.m; sourceTree = "<group>"; };
 		AD2305551D499A49006EDA12 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,9 +104,12 @@
 				05F700931D491B4800859860 /* ViewController.swift */,
 				05F700BF1D491C7E00859860 /* NavigationManager.swift */,
 				AD2305551D499A49006EDA12 /* Config.swift */,
+				AD10C8F51D4B3D7000E909B8 /* Mix.h */,
+				AD10C8F61D4B3D7000E909B8 /* Mix.m */,
 				05F700981D491B4800859860 /* Assets.xcassets */,
 				05F7009A1D491B4800859860 /* LaunchScreen.storyboard */,
 				05F7009D1D491B4800859860 /* Info.plist */,
+				AD10C8F41D4B3D6F00E909B8 /* NavManager-Bridging-Header.h */,
 			);
 			path = NavManager;
 			sourceTree = "<group>";
@@ -232,6 +239,7 @@
 				AD2305561D499A49006EDA12 /* Config.swift in Sources */,
 				05F700921D491B4800859860 /* AppDelegate.swift in Sources */,
 				05F700C01D491C7E00859860 /* NavigationManager.swift in Sources */,
+				AD10C8F71D4B3D7000E909B8 /* Mix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,11 +359,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NavManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HTY.NavManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NavManager/NavManager-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -363,11 +374,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NavManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HTY.NavManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NavManager/NavManager-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -447,6 +460,7 @@
 				AD10C79F1D4AECB700E909B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

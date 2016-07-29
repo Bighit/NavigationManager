@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>NavManager.xcscheme</key>
+		<key>test1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>NavManagerFramework.xcscheme</key>
+		<key>test1Framework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -17,22 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>05F7008D1D491B4800859860</key>
+		<key>AD10C87A1D4B392700E909B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>05F700A11D491B4800859860</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>05F700AC1D491B4800859860</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AD10C7941D4AECB700E909B8</key>
+		<key>AD10C8991D4B395800E909B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
