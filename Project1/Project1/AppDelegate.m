@@ -1,15 +1,14 @@
 //
 //  AppDelegate.m
-//  NavigationManager-OC
+//  Project1
 //
-//  Created by Hantianyu on 16/7/29.
+//  Created by Hantianyu on 16/8/1.
 //  Copyright © 2016年 HTY. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "ViewController1.h"
-#import "NavigationManager.h"
+#import "NavigationManagerFramework.h"
 @interface AppDelegate ()
 
 @end
@@ -20,17 +19,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     ViewController *vc=[[ViewController alloc]init];
-    ViewController1 *vc1=[[ViewController1 alloc]init];
+   
     UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
-    UINavigationController *nav1=[[UINavigationController alloc]initWithRootViewController:vc1];
     [nav setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"第一页" image:nil selectedImage:nil]];
-    [nav1 setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"第二页" image:nil selectedImage:nil]];
+//    [nav1 setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"第二页" image:nil selectedImage:nil]];
     UITabBarController *tab=[[UITabBarController alloc]init];
-    [tab setViewControllers:@[nav,nav1]];
+    [tab setViewControllers:@[nav]];
     [[NavigationManager manager] configWithTabBarController:tab];
     self.window=[[UIWindow alloc]init];
     self.window.rootViewController=tab;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

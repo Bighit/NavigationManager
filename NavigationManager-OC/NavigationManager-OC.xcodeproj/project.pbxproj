@@ -16,7 +16,39 @@
 		AD10C9261D4B5DCE00E909B8 /* NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9251D4B5DCE00E909B8 /* NavigationManager.m */; };
 		AD10C9291D4B5E2F00E909B8 /* NavigationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9281D4B5E2F00E909B8 /* NavigationNode.m */; };
 		AD10C92F1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C92E1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m */; };
+		AD6C474B1D4F32960008074D /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6C474A1D4F32960008074D /* ViewController1.m */; };
+		AD6C47541D4F45120008074D /* NavigationManagerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6C47531D4F45120008074D /* NavigationManagerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6C47581D4F45120008074D /* NavigationManagerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6C47511D4F45120008074D /* NavigationManagerFramework.framework */; };
+		AD6C47591D4F45120008074D /* NavigationManagerFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD6C47511D4F45120008074D /* NavigationManagerFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD6C475E1D4F452C0008074D /* NavigationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9281D4B5E2F00E909B8 /* NavigationNode.m */; };
+		AD6C475F1D4F452E0008074D /* NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9251D4B5DCE00E909B8 /* NavigationManager.m */; };
+		AD6C47601D4F45330008074D /* UIViewController+NavigaitonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C92E1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m */; };
+		AD765AF41D4F861A001C0C9E /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6C474A1D4F32960008074D /* ViewController1.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD6C47561D4F45120008074D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD10C9021D4B5D7900E909B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD6C47501D4F45120008074D;
+			remoteInfo = NavigationManagerFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD6C475D1D4F45120008074D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AD6C47591D4F45120008074D /* NavigationManagerFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AD10C90A1D4B5D7900E909B8 /* NavigationManager-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NavigationManager-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,10 +67,23 @@
 		AD10C9281D4B5E2F00E909B8 /* NavigationNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationNode.m; sourceTree = "<group>"; };
 		AD10C92D1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigaitonNode.h"; sourceTree = "<group>"; };
 		AD10C92E1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigaitonNode.m"; sourceTree = "<group>"; };
+		AD6C47491D4F32960008074D /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		AD6C474A1D4F32960008074D /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		AD6C47511D4F45120008074D /* NavigationManagerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NavigationManagerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6C47531D4F45120008074D /* NavigationManagerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationManagerFramework.h; sourceTree = "<group>"; };
+		AD6C47551D4F45120008074D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AD10C9071D4B5D7900E909B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6C47581D4F45120008074D /* NavigationManagerFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6C474D1D4F45120008074D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				AD10C90C1D4B5D7900E909B8 /* NavigationManager-OC */,
+				AD6C47521D4F45120008074D /* NavigationManagerFramework */,
 				AD10C90B1D4B5D7900E909B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				AD10C90A1D4B5D7900E909B8 /* NavigationManager-OC.app */,
+				AD6C47511D4F45120008074D /* NavigationManagerFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +118,8 @@
 				AD10C9111D4B5D7900E909B8 /* AppDelegate.m */,
 				AD10C9131D4B5D7900E909B8 /* ViewController.h */,
 				AD10C9141D4B5D7900E909B8 /* ViewController.m */,
+				AD6C47491D4F32960008074D /* ViewController1.h */,
+				AD6C474A1D4F32960008074D /* ViewController1.m */,
 				AD10C9161D4B5D7900E909B8 /* Main.storyboard */,
 				AD10C9191D4B5D7900E909B8 /* Assets.xcassets */,
 				AD10C91B1D4B5D7900E909B8 /* LaunchScreen.storyboard */,
@@ -94,7 +143,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AD6C47521D4F45120008074D /* NavigationManagerFramework */ = {
+			isa = PBXGroup;
+			children = (
+				AD6C47531D4F45120008074D /* NavigationManagerFramework.h */,
+				AD6C47551D4F45120008074D /* Info.plist */,
+			);
+			path = NavigationManagerFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AD6C474E1D4F45120008074D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6C47541D4F45120008074D /* NavigationManagerFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		AD10C9091D4B5D7900E909B8 /* NavigationManager-OC */ = {
@@ -104,15 +173,35 @@
 				AD10C9061D4B5D7900E909B8 /* Sources */,
 				AD10C9071D4B5D7900E909B8 /* Frameworks */,
 				AD10C9081D4B5D7900E909B8 /* Resources */,
+				AD6C475D1D4F45120008074D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AD6C47571D4F45120008074D /* PBXTargetDependency */,
 			);
 			name = "NavigationManager-OC";
 			productName = "NavigationManager-OC";
 			productReference = AD10C90A1D4B5D7900E909B8 /* NavigationManager-OC.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AD6C47501D4F45120008074D /* NavigationManagerFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6C475A1D4F45120008074D /* Build configuration list for PBXNativeTarget "NavigationManagerFramework" */;
+			buildPhases = (
+				AD6C474C1D4F45120008074D /* Sources */,
+				AD6C474D1D4F45120008074D /* Frameworks */,
+				AD6C474E1D4F45120008074D /* Headers */,
+				AD6C474F1D4F45120008074D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NavigationManagerFramework;
+			productName = NavigationManagerFramework;
+			productReference = AD6C47511D4F45120008074D /* NavigationManagerFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -124,6 +213,9 @@
 				ORGANIZATIONNAME = HTY;
 				TargetAttributes = {
 					AD10C9091D4B5D7900E909B8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					AD6C47501D4F45120008074D = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -142,6 +234,7 @@
 			projectRoot = "";
 			targets = (
 				AD10C9091D4B5D7900E909B8 /* NavigationManager-OC */,
+				AD6C47501D4F45120008074D /* NavigationManagerFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +250,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD6C474F1D4F45120008074D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -165,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD10C9151D4B5D7900E909B8 /* ViewController.m in Sources */,
+				AD6C474B1D4F32960008074D /* ViewController1.m in Sources */,
 				AD10C9261D4B5DCE00E909B8 /* NavigationManager.m in Sources */,
 				AD10C9121D4B5D7900E909B8 /* AppDelegate.m in Sources */,
 				AD10C9291D4B5E2F00E909B8 /* NavigationNode.m in Sources */,
@@ -173,7 +274,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD6C474C1D4F45120008074D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD765AF41D4F861A001C0C9E /* ViewController1.m in Sources */,
+				AD6C475E1D4F452C0008074D /* NavigationNode.m in Sources */,
+				AD6C47601D4F45330008074D /* UIViewController+NavigaitonNode.m in Sources */,
+				AD6C475F1D4F452E0008074D /* NavigationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD6C47571D4F45120008074D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD6C47501D4F45120008074D /* NavigationManagerFramework */;
+			targetProxy = AD6C47561D4F45120008074D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AD10C9161D4B5D7900E909B8 /* Main.storyboard */ = {
@@ -297,6 +417,54 @@
 			};
 			name = Release;
 		};
+		AD6C475B1D4F45120008074D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NavigationManagerFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = KS.NavigationManagerFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD6C475C1D4F45120008074D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NavigationManagerFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = KS.NavigationManagerFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -316,6 +484,16 @@
 				AD10C9231D4B5D7900E909B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD6C475A1D4F45120008074D /* Build configuration list for PBXNativeTarget "NavigationManagerFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6C475B1D4F45120008074D /* Debug */,
+				AD6C475C1D4F45120008074D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

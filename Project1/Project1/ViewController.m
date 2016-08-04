@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  NavigationManager-OC
+//  Project1
 //
-//  Created by Hantianyu on 16/7/29.
+//  Created by Hantianyu on 16/8/1.
 //  Copyright © 2016年 HTY. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "NavigationManager.h"
+#import "NavigationManagerFramework.h"
 @interface ViewController ()
 
 @end
@@ -25,6 +25,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)buttonClick:(id)sender{
+    [[NavigationManager manager] configNavigationPathWithString:@"=>ViewController1" identifier:@"tab0"];
     [[NavigationManager manager] pushWithViewController:self animated:YES];
 }
 - (void)didReceiveMemoryWarning {
