@@ -73,7 +73,7 @@
         
         
     }
-    if ([viewController.node getViewController]) {
+    if ([viewController.node getNextNode]) {
         NavigationNode *nextNode=[viewController.node getNextNode];
         [_nodeDictionary setObject:nextNode forKey:nextNode.identifier];
         [viewController.navigationController pushViewController:[nextNode getViewController] animated:animated];
