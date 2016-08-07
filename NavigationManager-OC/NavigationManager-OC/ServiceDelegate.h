@@ -11,4 +11,6 @@
 @protocol ServiceDelegate <NSObject>
 @required
 -(void)callService;
+@optional
+-(void)cancelService;
 @end

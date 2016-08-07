@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053BC98F1D5794940000DA3F /* ServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 053BC98E1D5794940000DA3F /* ServiceOperation.m */; };
 		AD10C90F1D4B5D7900E909B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C90E1D4B5D7900E909B8 /* main.m */; };
 		AD10C9121D4B5D7900E909B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9111D4B5D7900E909B8 /* AppDelegate.m */; };
 		AD10C9151D4B5D7900E909B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9141D4B5D7900E909B8 /* ViewController.m */; };
@@ -54,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		053BC98D1D5794940000DA3F /* ServiceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceOperation.h; path = ServiceManager/ServiceOperation.h; sourceTree = "<group>"; };
+		053BC98E1D5794940000DA3F /* ServiceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceOperation.m; path = ServiceManager/ServiceOperation.m; sourceTree = "<group>"; };
 		AD10C90A1D4B5D7900E909B8 /* NavigationManager-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NavigationManager-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD10C90E1D4B5D7900E909B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD10C9101D4B5D7900E909B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 			children = (
 				AD3FDE531D5437D400AC837C /* ServiceManager.h */,
 				AD3FDE541D5437D400AC837C /* ServiceManager.m */,
+				053BC98D1D5794940000DA3F /* ServiceOperation.h */,
+				053BC98E1D5794940000DA3F /* ServiceOperation.m */,
 				AD3FDE591D54386300AC837C /* CommonServiceOperator.h */,
 				AD3FDE5A1D54386300AC837C /* CommonServiceOperator.m */,
 				AD3FDE5C1D54435700AC837C /* ServiceDelegate.h */,
@@ -293,6 +298,7 @@
 				AD10C9151D4B5D7900E909B8 /* ViewController.m in Sources */,
 				AD6C474B1D4F32960008074D /* ViewController1.m in Sources */,
 				AD10C9261D4B5DCE00E909B8 /* NavigationManager.m in Sources */,
+				053BC98F1D5794940000DA3F /* ServiceOperation.m in Sources */,
 				AD10C9121D4B5D7900E909B8 /* AppDelegate.m in Sources */,
 				AD3FDE5B1D54386300AC837C /* CommonServiceOperator.m in Sources */,
 				AD10C9291D4B5E2F00E909B8 /* NavigationNode.m in Sources */,
