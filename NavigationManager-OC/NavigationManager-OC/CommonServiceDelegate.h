@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ServiceDelegate <NSObject>
+@protocol CommonServiceDelegate <NSObject>
 @required
--(void)callService;
+- (void)callService;
 @optional
--(void)cancelService;
+- (void)cancelService;
 @end

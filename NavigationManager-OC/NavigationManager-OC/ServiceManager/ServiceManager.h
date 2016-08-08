@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CommonServiceOperator.h"
+#import "CommonServiceOperation.h"
+#import "ServiceWithDataOperation.h"
 @interface ServiceManager : NSObject
-+(CommonServiceOperator *)loadService;
+
+
++(void)loadService:(NSString *)serviceName withCallBack:(void(^)())block;
++(void)loadService:(NSString *)serviceName withParams:(NSDictionary *)params withCallBack:(void(^)(NSDictionary *result))block synchronous:(BOOL)isSynchronous;
++(NSDictionary *)syncServiceData:(NSString *)serviceName withParams:(NSDictionary *)params;
 @end

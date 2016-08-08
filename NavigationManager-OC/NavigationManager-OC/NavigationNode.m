@@ -29,15 +29,16 @@
 -(NavigationNode *)getNextNode
 {
     if (self.nextNodePath) {
-        NSMutableArray *classArray=[NSMutableArray arrayWithArray:[self.nextNodePath componentsSeparatedByString:@"=>"]];
-        for (NSString *className in classArray) {
+        NSMutableArray<NSString *> *classArray=[NSMutableArray arrayWithArray:[self.nextNodePath componentsSeparatedByString:@"=>"]];
+        for (int i=0 ; i<classArray.count ;) {
+            NSString *className=classArray[i];
+            [classArray removeObjectAtIndex:i];
             if (className.length>0) {
                 UIViewController *viewController=[[NSClassFromString(className) alloc]init];
                 NavigationNode *node=[[NavigationNode alloc]initWithViewController:viewController identifier:self.identifier];
                 viewController.node=node;
                 node.previousNode=self;
-                [classArray removeObject:className];
-                node.nextNodePath=[classArray componentsJoinedByString:@"=>"];
+                node.nextNodePath=[NSString stringWithFormat:@"=>%@",[classArray componentsJoinedByString:@"=>"]];
                 return node;
                 break;
             }

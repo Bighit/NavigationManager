@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		053BC98F1D5794940000DA3F /* ServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 053BC98E1D5794940000DA3F /* ServiceOperation.m */; };
+		053BC98F1D5794940000DA3F /* CommonServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 053BC98E1D5794940000DA3F /* CommonServiceOperation.m */; };
 		AD10C90F1D4B5D7900E909B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C90E1D4B5D7900E909B8 /* main.m */; };
 		AD10C9121D4B5D7900E909B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9111D4B5D7900E909B8 /* AppDelegate.m */; };
 		AD10C9151D4B5D7900E909B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9141D4B5D7900E909B8 /* ViewController.m */; };
@@ -17,9 +17,17 @@
 		AD10C9261D4B5DCE00E909B8 /* NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9251D4B5DCE00E909B8 /* NavigationManager.m */; };
 		AD10C9291D4B5E2F00E909B8 /* NavigationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9281D4B5E2F00E909B8 /* NavigationNode.m */; };
 		AD10C92F1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C92E1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m */; };
+		AD2C02A41D582C330048A079 /* ServiceWithDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2C02A31D582C330048A079 /* ServiceWithDataOperation.m */; };
 		AD3FDE551D5437D400AC837C /* ServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3FDE541D5437D400AC837C /* ServiceManager.m */; };
-		AD3FDE5B1D54386300AC837C /* CommonServiceOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3FDE5A1D54386300AC837C /* CommonServiceOperator.m */; };
 		AD3FDE5F1D5444B800AC837C /* NoService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3FDE5E1D5444B800AC837C /* NoService.m */; };
+		AD5BAB041D586C2500B69DDB /* test1Service.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BAB031D586C2500B69DDB /* test1Service.m */; };
+		AD5BAB071D58798C00B69DDB /* test2Service.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BAB061D58798C00B69DDB /* test2Service.m */; };
+		AD5BAB081D587EDD00B69DDB /* ServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3FDE541D5437D400AC837C /* ServiceManager.m */; };
+		AD5BAB091D587EDF00B69DDB /* CommonServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 053BC98E1D5794940000DA3F /* CommonServiceOperation.m */; };
+		AD5BAB0A1D587EE600B69DDB /* ServiceWithDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2C02A31D582C330048A079 /* ServiceWithDataOperation.m */; };
+		AD5BAB0B1D587EF200B69DDB /* NoService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3FDE5E1D5444B800AC837C /* NoService.m */; };
+		AD5BAB0C1D587F0600B69DDB /* test1Service.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BAB031D586C2500B69DDB /* test1Service.m */; };
+		AD5BAB0D1D587F0900B69DDB /* test2Service.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BAB061D58798C00B69DDB /* test2Service.m */; };
 		AD6C474B1D4F32960008074D /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6C474A1D4F32960008074D /* ViewController1.m */; };
 		AD6C47541D4F45120008074D /* NavigationManagerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6C47531D4F45120008074D /* NavigationManagerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD6C47581D4F45120008074D /* NavigationManagerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6C47511D4F45120008074D /* NavigationManagerFramework.framework */; };
@@ -28,6 +36,8 @@
 		AD6C475F1D4F452E0008074D /* NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9251D4B5DCE00E909B8 /* NavigationManager.m */; };
 		AD6C47601D4F45330008074D /* UIViewController+NavigaitonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C92E1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m */; };
 		AD765AF41D4F861A001C0C9E /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6C474A1D4F32960008074D /* ViewController1.m */; };
+		ADE88EDB1D588AD100B594B3 /* UIViewController+NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE88EDA1D588AD100B594B3 /* UIViewController+NavigationManager.m */; };
+		ADE88EDC1D5891D300B594B3 /* UIViewController+NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE88EDA1D588AD100B594B3 /* UIViewController+NavigationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		053BC98D1D5794940000DA3F /* ServiceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceOperation.h; path = ServiceManager/ServiceOperation.h; sourceTree = "<group>"; };
-		053BC98E1D5794940000DA3F /* ServiceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceOperation.m; path = ServiceManager/ServiceOperation.m; sourceTree = "<group>"; };
+		053BC98D1D5794940000DA3F /* CommonServiceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonServiceOperation.h; path = ServiceManager/CommonServiceOperation.h; sourceTree = "<group>"; };
+		053BC98E1D5794940000DA3F /* CommonServiceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonServiceOperation.m; path = ServiceManager/CommonServiceOperation.m; sourceTree = "<group>"; };
 		AD10C90A1D4B5D7900E909B8 /* NavigationManager-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NavigationManager-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD10C90E1D4B5D7900E909B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD10C9101D4B5D7900E909B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,18 +83,25 @@
 		AD10C9281D4B5E2F00E909B8 /* NavigationNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationNode.m; sourceTree = "<group>"; };
 		AD10C92D1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigaitonNode.h"; sourceTree = "<group>"; };
 		AD10C92E1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigaitonNode.m"; sourceTree = "<group>"; };
+		AD2C029E1D5824560048A079 /* ServiceWithDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceWithDataDelegate.h; sourceTree = "<group>"; };
+		AD2C02A21D582C330048A079 /* ServiceWithDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceWithDataOperation.h; sourceTree = "<group>"; };
+		AD2C02A31D582C330048A079 /* ServiceWithDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceWithDataOperation.m; sourceTree = "<group>"; };
 		AD3FDE531D5437D400AC837C /* ServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceManager.h; path = ServiceManager/ServiceManager.h; sourceTree = "<group>"; };
 		AD3FDE541D5437D400AC837C /* ServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceManager.m; path = ServiceManager/ServiceManager.m; sourceTree = "<group>"; };
-		AD3FDE591D54386300AC837C /* CommonServiceOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonServiceOperator.h; path = ServiceManager/CommonServiceOperator.h; sourceTree = "<group>"; };
-		AD3FDE5A1D54386300AC837C /* CommonServiceOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonServiceOperator.m; path = ServiceManager/CommonServiceOperator.m; sourceTree = "<group>"; };
-		AD3FDE5C1D54435700AC837C /* ServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceDelegate.h; sourceTree = "<group>"; };
+		AD3FDE5C1D54435700AC837C /* CommonServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonServiceDelegate.h; sourceTree = "<group>"; };
 		AD3FDE5D1D5444B800AC837C /* NoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoService.h; sourceTree = "<group>"; };
 		AD3FDE5E1D5444B800AC837C /* NoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoService.m; sourceTree = "<group>"; };
+		AD5BAB021D586C2500B69DDB /* test1Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test1Service.h; sourceTree = "<group>"; };
+		AD5BAB031D586C2500B69DDB /* test1Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test1Service.m; sourceTree = "<group>"; };
+		AD5BAB051D58798C00B69DDB /* test2Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test2Service.h; sourceTree = "<group>"; };
+		AD5BAB061D58798C00B69DDB /* test2Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test2Service.m; sourceTree = "<group>"; };
 		AD6C47491D4F32960008074D /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		AD6C474A1D4F32960008074D /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		AD6C47511D4F45120008074D /* NavigationManagerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NavigationManagerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6C47531D4F45120008074D /* NavigationManagerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationManagerFramework.h; sourceTree = "<group>"; };
 		AD6C47551D4F45120008074D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE88ED91D588AD100B594B3 /* UIViewController+NavigationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationManager.h"; sourceTree = "<group>"; };
+		ADE88EDA1D588AD100B594B3 /* UIViewController+NavigationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationManager.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +151,10 @@
 				AD10C9141D4B5D7900E909B8 /* ViewController.m */,
 				AD6C47491D4F32960008074D /* ViewController1.h */,
 				AD6C474A1D4F32960008074D /* ViewController1.m */,
+				AD5BAB021D586C2500B69DDB /* test1Service.h */,
+				AD5BAB031D586C2500B69DDB /* test1Service.m */,
+				AD5BAB051D58798C00B69DDB /* test2Service.h */,
+				AD5BAB061D58798C00B69DDB /* test2Service.m */,
 				AD10C9161D4B5D7900E909B8 /* Main.storyboard */,
 				AD10C9191D4B5D7900E909B8 /* Assets.xcassets */,
 				AD10C91B1D4B5D7900E909B8 /* LaunchScreen.storyboard */,
@@ -145,6 +166,8 @@
 				AD10C9281D4B5E2F00E909B8 /* NavigationNode.m */,
 				AD10C92D1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.h */,
 				AD10C92E1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m */,
+				ADE88ED91D588AD100B594B3 /* UIViewController+NavigationManager.h */,
+				ADE88EDA1D588AD100B594B3 /* UIViewController+NavigationManager.m */,
 			);
 			path = "NavigationManager-OC";
 			sourceTree = "<group>";
@@ -162,11 +185,12 @@
 			children = (
 				AD3FDE531D5437D400AC837C /* ServiceManager.h */,
 				AD3FDE541D5437D400AC837C /* ServiceManager.m */,
-				053BC98D1D5794940000DA3F /* ServiceOperation.h */,
-				053BC98E1D5794940000DA3F /* ServiceOperation.m */,
-				AD3FDE591D54386300AC837C /* CommonServiceOperator.h */,
-				AD3FDE5A1D54386300AC837C /* CommonServiceOperator.m */,
-				AD3FDE5C1D54435700AC837C /* ServiceDelegate.h */,
+				053BC98D1D5794940000DA3F /* CommonServiceOperation.h */,
+				053BC98E1D5794940000DA3F /* CommonServiceOperation.m */,
+				AD3FDE5C1D54435700AC837C /* CommonServiceDelegate.h */,
+				AD2C02A21D582C330048A079 /* ServiceWithDataOperation.h */,
+				AD2C02A31D582C330048A079 /* ServiceWithDataOperation.m */,
+				AD2C029E1D5824560048A079 /* ServiceWithDataDelegate.h */,
 				AD3FDE5D1D5444B800AC837C /* NoService.h */,
 				AD3FDE5E1D5444B800AC837C /* NoService.m */,
 			);
@@ -297,15 +321,18 @@
 			files = (
 				AD10C9151D4B5D7900E909B8 /* ViewController.m in Sources */,
 				AD6C474B1D4F32960008074D /* ViewController1.m in Sources */,
+				ADE88EDB1D588AD100B594B3 /* UIViewController+NavigationManager.m in Sources */,
+				AD5BAB071D58798C00B69DDB /* test2Service.m in Sources */,
 				AD10C9261D4B5DCE00E909B8 /* NavigationManager.m in Sources */,
-				053BC98F1D5794940000DA3F /* ServiceOperation.m in Sources */,
+				053BC98F1D5794940000DA3F /* CommonServiceOperation.m in Sources */,
 				AD10C9121D4B5D7900E909B8 /* AppDelegate.m in Sources */,
-				AD3FDE5B1D54386300AC837C /* CommonServiceOperator.m in Sources */,
+				AD2C02A41D582C330048A079 /* ServiceWithDataOperation.m in Sources */,
 				AD10C9291D4B5E2F00E909B8 /* NavigationNode.m in Sources */,
 				AD3FDE5F1D5444B800AC837C /* NoService.m in Sources */,
 				AD10C92F1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m in Sources */,
 				AD10C90F1D4B5D7900E909B8 /* main.m in Sources */,
 				AD3FDE551D5437D400AC837C /* ServiceManager.m in Sources */,
+				AD5BAB041D586C2500B69DDB /* test1Service.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +342,13 @@
 			files = (
 				AD765AF41D4F861A001C0C9E /* ViewController1.m in Sources */,
 				AD6C475E1D4F452C0008074D /* NavigationNode.m in Sources */,
+				AD5BAB091D587EDF00B69DDB /* CommonServiceOperation.m in Sources */,
+				AD5BAB081D587EDD00B69DDB /* ServiceManager.m in Sources */,
+				AD5BAB0D1D587F0900B69DDB /* test2Service.m in Sources */,
+				AD5BAB0B1D587EF200B69DDB /* NoService.m in Sources */,
+				AD5BAB0C1D587F0600B69DDB /* test1Service.m in Sources */,
+				AD5BAB0A1D587EE600B69DDB /* ServiceWithDataOperation.m in Sources */,
+				ADE88EDC1D5891D300B594B3 /* UIViewController+NavigationManager.m in Sources */,
 				AD6C47601D4F45330008074D /* UIViewController+NavigaitonNode.m in Sources */,
 				AD6C475F1D4F452E0008074D /* NavigationManager.m in Sources */,
 			);

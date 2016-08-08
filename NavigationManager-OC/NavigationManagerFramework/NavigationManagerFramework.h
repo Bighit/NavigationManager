@@ -14,6 +14,8 @@ FOUNDATION_EXPORT double NavigationManagerFrameworkVersionNumber;
 //! Project version string for NavigationManagerFramework.
 FOUNDATION_EXPORT const unsigned char NavigationManagerFrameworkVersionString[];
 #import "NavigationManager.h"
+#import "ServiceManager.h"
+#import "UIViewController+NavigationManager.h"
 // In this header, you should import all the public headers of your framework using statements like #import <NavigationManagerFramework/PublicHeader.h>
 
 

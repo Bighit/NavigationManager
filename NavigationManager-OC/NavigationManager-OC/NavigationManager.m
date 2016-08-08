@@ -40,7 +40,7 @@
     for (UINavigationController *navViewController in tabBarController.viewControllers) {
         if ([navViewController isKindOfClass:[UINavigationController class]]) {
             UIViewController *vc=navViewController.topViewController;
-            NavigationNode *node=[[NavigationNode alloc]initWithViewController:vc identifier:[NSString stringWithFormat:@"%@%lu",tabChildViewControllerIdentifier,[tabBarController.viewControllers indexOfObject:navViewController]]];
+            NavigationNode *node=[[NavigationNode alloc]initWithViewController:vc identifier:[NSString stringWithFormat:@"%@%u",tabChildViewControllerIdentifier,[tabBarController.viewControllers indexOfObject:navViewController]]];
    
             [_nodeDictionary setObject:node forKey:node.identifier];
             
@@ -61,7 +61,8 @@
     if (!viewController.node.nextNodePath) {
         for (NSString *configString in navigationConfig) {
             NSMutableArray *array= [NSMutableArray arrayWithArray:[configString componentsSeparatedByString:@"=>"]];
-            for (NSString *className in array) {
+            for (int i=0 ; i<array.count ;) {
+                    NSString *className=array[i];
                 [array removeObjectAtIndex:0];
                 if ([className isEqualToString:NSStringFromClass(viewController.class)]) {
                     viewController.node.nextNodePath=[NSString stringWithFormat:@"=>%@",[array componentsJoinedByString:@"=>"]];

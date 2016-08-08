@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "NavigationManagerFramework.h"
+
 @interface ViewController ()
 
 @end
@@ -25,8 +26,8 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)buttonClick:(id)sender{
-    [[NavigationManager manager] configNavigationPathWithString:@"=>ViewController1" identifier:@"tab0"];
-    [[NavigationManager manager] pushWithViewController:self animated:YES];
+    [self pushWithPath:@"=>ViewController1=>ViewController1=>ViewController1=>ViewController1"];
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
