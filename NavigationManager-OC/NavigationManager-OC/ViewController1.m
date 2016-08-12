@@ -30,15 +30,17 @@
     [self nextViewController];
 }
 -(void)buttonClick1:(id)sender{
+////    [self previousViewController];
+////    for(int i=0; i<1000 ;i++)
+////    {
+////        [ServiceManager loadService:@"test1Service" withCallBack:^{
+////            NSLog(@"12312312");
+////        }];
+//    NSDictionary *dic=[ServiceManager syncServiceData:@"test2Service" withParams:nil];
+//    NSLog(@"%@",dic);
+////    }
+    [self pushOrPopWithClassName:@"ViewControllerxib"];
 //    [self previousViewController];
-//    for(int i=0; i<1000 ;i++)
-//    {
-//        [ServiceManager loadService:@"test1Service" withCallBack:^{
-//            NSLog(@"12312312");
-//        }];
-    NSDictionary *dic=[ServiceManager syncServiceData:@"test2Service" withParams:nil];
-    NSLog(@"%@",dic);
-//    }
     
 
 }

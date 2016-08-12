@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		053BC98F1D5794940000DA3F /* CommonServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 053BC98E1D5794940000DA3F /* CommonServiceOperation.m */; };
+		AD0F8AC91D5B065C0027E516 /* UINavigationController+HookPushMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0F8AC81D5B065C0027E516 /* UINavigationController+HookPushMethod.m */; };
+		AD0F8AD01D5C24CC0027E516 /* UINavigationController+HookPushMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0F8AC81D5B065C0027E516 /* UINavigationController+HookPushMethod.m */; };
 		AD10C90F1D4B5D7900E909B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C90E1D4B5D7900E909B8 /* main.m */; };
 		AD10C9121D4B5D7900E909B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9111D4B5D7900E909B8 /* AppDelegate.m */; };
 		AD10C9151D4B5D7900E909B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9141D4B5D7900E909B8 /* ViewController.m */; };
@@ -36,6 +38,10 @@
 		AD6C475F1D4F452E0008074D /* NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9251D4B5DCE00E909B8 /* NavigationManager.m */; };
 		AD6C47601D4F45330008074D /* UIViewController+NavigaitonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C92E1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m */; };
 		AD765AF41D4F861A001C0C9E /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6C474A1D4F32960008074D /* ViewController1.m */; };
+		ADD3AB0F1D5C2DE70062E634 /* ViewControllerxib.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD3AB0E1D5C2DE70062E634 /* ViewControllerxib.m */; };
+		ADD3AB101D5C2DEA0062E634 /* ViewControllerxib.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD3AB0E1D5C2DE70062E634 /* ViewControllerxib.m */; };
+		ADD3AB121D5C2E0B0062E634 /* ViewControllerxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD3AB111D5C2E0B0062E634 /* ViewControllerxib.xib */; };
+		ADD3AB131D5C2F7C0062E634 /* ViewControllerxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD3AB111D5C2E0B0062E634 /* ViewControllerxib.xib */; };
 		ADE88EDB1D588AD100B594B3 /* UIViewController+NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE88EDA1D588AD100B594B3 /* UIViewController+NavigationManager.m */; };
 		ADE88EDC1D5891D300B594B3 /* UIViewController+NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE88EDA1D588AD100B594B3 /* UIViewController+NavigationManager.m */; };
 /* End PBXBuildFile section */
@@ -67,6 +73,8 @@
 /* Begin PBXFileReference section */
 		053BC98D1D5794940000DA3F /* CommonServiceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonServiceOperation.h; path = ServiceManager/CommonServiceOperation.h; sourceTree = "<group>"; };
 		053BC98E1D5794940000DA3F /* CommonServiceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonServiceOperation.m; path = ServiceManager/CommonServiceOperation.m; sourceTree = "<group>"; };
+		AD0F8AC71D5B065C0027E516 /* UINavigationController+HookPushMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HookPushMethod.h"; sourceTree = "<group>"; };
+		AD0F8AC81D5B065C0027E516 /* UINavigationController+HookPushMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HookPushMethod.m"; sourceTree = "<group>"; };
 		AD10C90A1D4B5D7900E909B8 /* NavigationManager-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NavigationManager-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD10C90E1D4B5D7900E909B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD10C9101D4B5D7900E909B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +108,9 @@
 		AD6C47511D4F45120008074D /* NavigationManagerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NavigationManagerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6C47531D4F45120008074D /* NavigationManagerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationManagerFramework.h; sourceTree = "<group>"; };
 		AD6C47551D4F45120008074D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD3AB0D1D5C2DE70062E634 /* ViewControllerxib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerxib.h; sourceTree = "<group>"; };
+		ADD3AB0E1D5C2DE70062E634 /* ViewControllerxib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerxib.m; sourceTree = "<group>"; };
+		ADD3AB111D5C2E0B0062E634 /* ViewControllerxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerxib.xib; sourceTree = "<group>"; };
 		ADE88ED91D588AD100B594B3 /* UIViewController+NavigationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationManager.h"; sourceTree = "<group>"; };
 		ADE88EDA1D588AD100B594B3 /* UIViewController+NavigationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationManager.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +162,9 @@
 				AD10C9141D4B5D7900E909B8 /* ViewController.m */,
 				AD6C47491D4F32960008074D /* ViewController1.h */,
 				AD6C474A1D4F32960008074D /* ViewController1.m */,
+				ADD3AB0D1D5C2DE70062E634 /* ViewControllerxib.h */,
+				ADD3AB0E1D5C2DE70062E634 /* ViewControllerxib.m */,
+				ADD3AB111D5C2E0B0062E634 /* ViewControllerxib.xib */,
 				AD5BAB021D586C2500B69DDB /* test1Service.h */,
 				AD5BAB031D586C2500B69DDB /* test1Service.m */,
 				AD5BAB051D58798C00B69DDB /* test2Service.h */,
@@ -168,6 +182,8 @@
 				AD10C92E1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m */,
 				ADE88ED91D588AD100B594B3 /* UIViewController+NavigationManager.h */,
 				ADE88EDA1D588AD100B594B3 /* UIViewController+NavigationManager.m */,
+				AD0F8AC71D5B065C0027E516 /* UINavigationController+HookPushMethod.h */,
+				AD0F8AC81D5B065C0027E516 /* UINavigationController+HookPushMethod.m */,
 			);
 			path = "NavigationManager-OC";
 			sourceTree = "<group>";
@@ -299,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD3AB121D5C2E0B0062E634 /* ViewControllerxib.xib in Resources */,
 				AD10C91D1D4B5D7900E909B8 /* LaunchScreen.storyboard in Resources */,
 				AD10C91A1D4B5D7900E909B8 /* Assets.xcassets in Resources */,
 				AD10C9181D4B5D7900E909B8 /* Main.storyboard in Resources */,
@@ -309,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD3AB131D5C2F7C0062E634 /* ViewControllerxib.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +337,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD3AB0F1D5C2DE70062E634 /* ViewControllerxib.m in Sources */,
 				AD10C9151D4B5D7900E909B8 /* ViewController.m in Sources */,
+				AD0F8AC91D5B065C0027E516 /* UINavigationController+HookPushMethod.m in Sources */,
 				AD6C474B1D4F32960008074D /* ViewController1.m in Sources */,
 				ADE88EDB1D588AD100B594B3 /* UIViewController+NavigationManager.m in Sources */,
 				AD5BAB071D58798C00B69DDB /* test2Service.m in Sources */,
@@ -341,6 +361,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD765AF41D4F861A001C0C9E /* ViewController1.m in Sources */,
+				ADD3AB101D5C2DEA0062E634 /* ViewControllerxib.m in Sources */,
+				AD0F8AD01D5C24CC0027E516 /* UINavigationController+HookPushMethod.m in Sources */,
 				AD6C475E1D4F452C0008074D /* NavigationNode.m in Sources */,
 				AD5BAB091D587EDF00B69DDB /* CommonServiceOperation.m in Sources */,
 				AD5BAB081D587EDD00B69DDB /* ServiceManager.m in Sources */,

@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "NavigationNode.h"
+#import "UIViewController+NavigaitonNode.h"
 
 @interface NavigationManager : NSObject
 +(instancetype)manager;
 -(void)configWithTabBarController:(UITabBarController *)tabBarController;
--(void)addNavigationNode:(NavigationNode *)node;
+//
+-(void)setNavigationNode:(NavigationNode *)node;
 -(void)configNavigationPathWithString:(NSString *)path identifier:(NSString *)identifier;
--(void)pushWithViewController:(UIViewController *)viewController animated:(BOOL)animated;
--(void)popWithViewController:(UIViewController *)viewController to:(NSString *)className animated:(BOOL)animated;
+-(void)pushWithViewIdentifier:(NSString *)identifier animated:(BOOL)animated;
+-(void)popWithIdentifier:(NSString *)identifier to:(NSString *)className animated:(BOOL)animated;
 @end

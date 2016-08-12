@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "NavigationManager.h"
+#import "ViewController1.h"
 @interface ViewController ()
 
 @end
@@ -25,7 +26,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)buttonClick:(id)sender{
-    [[NavigationManager manager] pushWithViewController:self animated:YES];
+    ViewController1 *vc1=[[ViewController1 alloc]init];
+    [self.navigationController pushViewController:vc1 animated:YES];
+    
+//    [[NavigationManager manager] pushWithViewIdentifier:self.node.identifier  animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

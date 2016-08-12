@@ -7,10 +7,10 @@
 //
 
 #import "NavigationManager.h"
-#import "UIViewController+NavigaitonNode.h"
+#import "UINavigationController+HookPushMethod.h"
 
 #define tabChildViewControllerIdentifier @"tab"
-#define navigationConfig @[@"ViewController=>ViewController1=>ViewController4",@"ViewController2=>ViewController4"]
+#define navigationConfig @[@"ViewController=>ViewController1=>ViewController1",@"ViewController2=>ViewController4"]
 
 @implementation NavigationManager
 {
@@ -47,57 +47,63 @@
         }
     }
 }
--(void)addNavigationNode:(NavigationNode *)node
+-(void)setNavigationNode:(NavigationNode *)node
 {
-    [_nodeDictionary setObject:node forKey:node.identifier];
+    if (node) {
+        [_nodeDictionary setObject:node forKey:node.identifier];
+    }
 }
 -(void)configNavigationPathWithString:(NSString *)path identifier:(NSString *)identifier
 {
     NavigationNode *node=_nodeDictionary[identifier];
     node.nextNodePath=path;
 }
--(void)pushWithViewController:(UIViewController *)viewController animated:(BOOL)animated
+-(void)pushWithViewIdentifier:(NSString *)identifier animated:(BOOL)animated
 {
-    if (!viewController.node.nextNodePath) {
+    NavigationNode *node=_nodeDictionary[identifier];
+    if (!node.nextNodePath||[node.nextNodePath isEqualToString:@"=>"]) {
         for (NSString *configString in navigationConfig) {
             NSMutableArray *array= [NSMutableArray arrayWithArray:[configString componentsSeparatedByString:@"=>"]];
             for (int i=0 ; i<array.count ;) {
                     NSString *className=array[i];
                 [array removeObjectAtIndex:0];
-                if ([className isEqualToString:NSStringFromClass(viewController.class)]) {
-                    viewController.node.nextNodePath=[NSString stringWithFormat:@"=>%@",[array componentsJoinedByString:@"=>"]];
+                if ([className isEqualToString:NSStringFromClass([node getViewController].class)]) {
+                    node.nextNodePath=[NSString stringWithFormat:@"=>%@",[array componentsJoinedByString:@"=>"]];
+                    break;
                 }
-                break;
+                
             }
             
         }
         
         
     }
-    if ([viewController.node getNextNode]) {
-        NavigationNode *nextNode=[viewController.node getNextNode];
+    if ([node getNextNode]) {
+        NavigationNode *nextNode=[node getNextNode];
         [_nodeDictionary setObject:nextNode forKey:nextNode.identifier];
-        [viewController.navigationController pushViewController:[nextNode getViewController] animated:animated];
+        [[node getViewController].navigationController hook_pushViewController:[nextNode getViewController] animated:animated];
         NSLog(@"%@",nextNode.description);
     }
     
 }
--(void)popWithViewController:(UIViewController *)viewController to:(NSString *)className animated:(BOOL)animated
+-(void)popWithIdentifier:(NSString *)identifier to:(NSString *)className animated:(BOOL)animated
 {
-    if (viewController.node.previousNode&&[viewController.node getViewController]) {
+    NavigationNode *node=_nodeDictionary[identifier];
+    if (node.previousNode&&[node getViewController]) {
         if (className.length>0) {
-            NavigationNode * node=viewController.node.previousNode;
-            while  (![className isEqualToString:NSStringFromClass([viewController.node.previousNode getViewController].class)]&&node.previousNode)   {
+            node=node.previousNode;
+            while  (![className isEqualToString:NSStringFromClass([node getViewController].class)]&&node.previousNode)   {
                 node=node.previousNode;
             }
             [_nodeDictionary setObject:node forKey:node.identifier];
             _nodeDictionary[node.identifier]=node;
             NSLog(@"%@",node.description);
-            [viewController.navigationController popToViewController:[node getViewController] animated:animated];
+            [[node getViewController].navigationController hook_popToViewController:[node getViewController] animated:animated];
         }else{
-            [_nodeDictionary setObject:viewController.node.previousNode forKey:viewController.node.previousNode.nextNodePath];
-            NSLog(@"%@",viewController.node.previousNode.description);
-            [viewController.navigationController popViewControllerAnimated:animated];
+            [_nodeDictionary setObject:node.previousNode forKey:node.previousNode.identifier];
+            NSLog(@"%@",node.previousNode.description);
+            
+            [[node getViewController].navigationController hook_popViewControllerAnimated:animated];
         }
     }
 }

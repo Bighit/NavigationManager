@@ -12,11 +12,11 @@
 @implementation UIViewController (NavigationManager)
 -(void)nextViewController
 {
-    [[NavigationManager manager] pushWithViewController:self animated:YES];
+    [[NavigationManager manager] pushWithViewIdentifier:self.node.identifier animated:YES];
 }
 -(void)previousViewController
 {
-    [[NavigationManager manager] popWithViewController:self to:nil animated:YES];
+    [[NavigationManager manager] popWithIdentifier:self.node.identifier to:nil animated:YES];
 }
 -(void)pushWithPath:(NSString *)path
 {
@@ -25,6 +25,20 @@
 }
 -(void)popWithClassName:(NSString *)VCName
 {
-    [[NavigationManager manager] popWithViewController:self to:VCName animated:YES];
+    [[NavigationManager manager] popWithIdentifier:self.node.identifier to:VCName animated:YES];
 }
+-(void)pushOrPopWithClassName:(NSString *)VCName
+{
+    NavigationNode *node=self.node.previousNode;
+    while  (![VCName isEqualToString:NSStringFromClass([node getViewController].class)]&&node.previousNode){
+        node=node.previousNode;
+    }
+    if ([VCName isEqualToString:NSStringFromClass([node getViewController].class)]) {
+        [self popWithClassName:VCName];
+    }else
+    {
+        [self pushWithPath:[NSString stringWithFormat:@"=>%@",VCName]];
+    }
+}
+
 @end

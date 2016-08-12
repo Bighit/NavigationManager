@@ -13,4 +13,5 @@
 -(void)previousViewController;
 -(void)pushWithPath:(NSString *)path;
 -(void)popWithClassName:(NSString *)VCName;
+-(void)pushOrPopWithClassName:(NSString *)VCName;
 @end
