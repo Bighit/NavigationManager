@@ -13,32 +13,8 @@
 		AD6C47781D4F47E70008074D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6C47761D4F47E70008074D /* Main.storyboard */; };
 		AD6C477A1D4F47E70008074D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6C47791D4F47E70008074D /* Assets.xcassets */; };
 		AD6C477D1D4F47E70008074D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6C477B1D4F47E70008074D /* LaunchScreen.storyboard */; };
-		AD765AF31D4F85D6001C0C9E /* NavigationManagerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD765AED1D4F8595001C0C9E /* NavigationManagerFramework.framework */; };
+		ADC889371D61C65200B32B1A /* NavigationManagerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC889361D61C65200B32B1A /* NavigationManagerFramework.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AD765AEA1D4F8595001C0C9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD765AE51D4F8595001C0C9E /* NavigationManager-OC.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AD10C90A1D4B5D7900E909B8;
-			remoteInfo = "NavigationManager-OC";
-		};
-		AD765AEC1D4F8595001C0C9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD765AE51D4F8595001C0C9E /* NavigationManager-OC.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AD6C47511D4F45120008074D;
-			remoteInfo = NavigationManagerFramework;
-		};
-		AD765AEF1D4F85D2001C0C9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD765AE51D4F8595001C0C9E /* NavigationManager-OC.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AD6C47501D4F45120008074D;
-			remoteInfo = NavigationManagerFramework;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AD6C476A1D4F47E70008074D /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +27,7 @@
 		AD6C47791D4F47E70008074D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD6C477C1D4F47E70008074D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD6C477E1D4F47E70008074D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD765AE51D4F8595001C0C9E /* NavigationManager-OC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "NavigationManager-OC.xcodeproj"; path = "../NavigationManager-OC/NavigationManager-OC.xcodeproj"; sourceTree = "<group>"; };
+		ADC889361D61C65200B32B1A /* NavigationManagerFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NavigationManagerFramework.framework; path = "../../Library/Developer/Xcode/DerivedData/MultiProject-agxzzmbymzwhkyandxsboeeivuli/Build/Products/Debug-iphoneos/NavigationManagerFramework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD765AF31D4F85D6001C0C9E /* NavigationManagerFramework.framework in Frameworks */,
+				ADC889371D61C65200B32B1A /* NavigationManagerFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +45,7 @@
 		AD6C47611D4F47E70008074D = {
 			isa = PBXGroup;
 			children = (
-				AD765AE51D4F8595001C0C9E /* NavigationManager-OC.xcodeproj */,
+				ADC889361D61C65200B32B1A /* NavigationManagerFramework.framework */,
 				AD6C476C1D4F47E70008074D /* Project1 */,
 				AD6C476B1D4F47E70008074D /* Products */,
 			);
@@ -107,15 +83,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AD765AE61D4F8595001C0C9E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AD765AEB1D4F8595001C0C9E /* NavigationManager-OC.app */,
-				AD765AED1D4F8595001C0C9E /* NavigationManagerFramework.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,11 +93,11 @@
 				AD6C47661D4F47E70008074D /* Sources */,
 				AD6C47671D4F47E70008074D /* Frameworks */,
 				AD6C47681D4F47E70008074D /* Resources */,
+				ADC889351D61C5E200B32B1A /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AD765AF01D4F85D2001C0C9E /* PBXTargetDependency */,
 			);
 			name = Project1;
 			productName = Project1;
@@ -162,35 +129,12 @@
 			mainGroup = AD6C47611D4F47E70008074D;
 			productRefGroup = AD6C476B1D4F47E70008074D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AD765AE61D4F8595001C0C9E /* Products */;
-					ProjectRef = AD765AE51D4F8595001C0C9E /* NavigationManager-OC.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AD6C47691D4F47E70008074D /* Project1 */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		AD765AEB1D4F8595001C0C9E /* NavigationManager-OC.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "NavigationManager-OC.app";
-			remoteRef = AD765AEA1D4F8595001C0C9E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AD765AED1D4F8595001C0C9E /* NavigationManagerFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = NavigationManagerFramework.framework;
-			remoteRef = AD765AEC1D4F8595001C0C9E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AD6C47681D4F47E70008074D /* Resources */ = {
@@ -205,6 +149,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ADC889351D61C5E200B32B1A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "RESOURCE_DIR=${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\nfor file in `ls ${CONFIGURATION_BUILD_DIR}`;\ndo\nif [[ $file == *.framework ]]\nthen\nframework_name=`echo $file | cut -d \".\" -f 1`\nframework_floder=${CONFIGURATION_BUILD_DIR}/${file}\nif ls ${framework_floder}/ >/dev/null 2>&1\nthen\necho \"copy ${framework_name} resource\"\nrsync -avr --copy-links --no-relative  ${framework_floder}/*.nib ${RESOURCE_DIR}\nrsync -avr --copy-links --no-relative  ${framework_floder}/*.png ${RESOURCE_DIR}\nrsync -avr --copy-links --no-relative  ${framework_floder}/*.car ${RESOURCE_DIR}\nfi\nfi\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD6C47661D4F47E70008074D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -217,14 +177,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AD765AF01D4F85D2001C0C9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NavigationManagerFramework;
-			targetProxy = AD765AEF1D4F85D2001C0C9E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AD6C47761D4F47E70008074D /* Main.storyboard */ = {

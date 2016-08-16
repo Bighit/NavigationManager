@@ -38,6 +38,9 @@
 		AD6C475F1D4F452E0008074D /* NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C9251D4B5DCE00E909B8 /* NavigationManager.m */; };
 		AD6C47601D4F45330008074D /* UIViewController+NavigaitonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10C92E1D4B6D8700E909B8 /* UIViewController+NavigaitonNode.m */; };
 		AD765AF41D4F861A001C0C9E /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6C474A1D4F32960008074D /* ViewController1.m */; };
+		ADC8893A1D61D0C100B32B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD10C9191D4B5D7900E909B8 /* Assets.xcassets */; };
+		ADC8893C1D61D10200B32B1A /* aa.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC8893B1D61D10200B32B1A /* aa.png */; };
+		ADC8893D1D61D10200B32B1A /* aa.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC8893B1D61D10200B32B1A /* aa.png */; };
 		ADD3AB0F1D5C2DE70062E634 /* ViewControllerxib.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD3AB0E1D5C2DE70062E634 /* ViewControllerxib.m */; };
 		ADD3AB101D5C2DEA0062E634 /* ViewControllerxib.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD3AB0E1D5C2DE70062E634 /* ViewControllerxib.m */; };
 		ADD3AB121D5C2E0B0062E634 /* ViewControllerxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD3AB111D5C2E0B0062E634 /* ViewControllerxib.xib */; };
@@ -108,6 +111,7 @@
 		AD6C47511D4F45120008074D /* NavigationManagerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NavigationManagerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6C47531D4F45120008074D /* NavigationManagerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationManagerFramework.h; sourceTree = "<group>"; };
 		AD6C47551D4F45120008074D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC8893B1D61D10200B32B1A /* aa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aa.png; sourceTree = "<group>"; };
 		ADD3AB0D1D5C2DE70062E634 /* ViewControllerxib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerxib.h; sourceTree = "<group>"; };
 		ADD3AB0E1D5C2DE70062E634 /* ViewControllerxib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerxib.m; sourceTree = "<group>"; };
 		ADD3AB111D5C2E0B0062E634 /* ViewControllerxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerxib.xib; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 		AD10C9011D4B5D7900E909B8 = {
 			isa = PBXGroup;
 			children = (
+				ADC8893B1D61D10200B32B1A /* aa.png */,
 				AD3FDE521D54375F00AC837C /* ServiceControl */,
 				AD10C90C1D4B5D7900E909B8 /* NavigationManager-OC */,
 				AD6C47521D4F45120008074D /* NavigationManagerFramework */,
@@ -315,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC8893C1D61D10200B32B1A /* aa.png in Resources */,
 				ADD3AB121D5C2E0B0062E634 /* ViewControllerxib.xib in Resources */,
 				AD10C91D1D4B5D7900E909B8 /* LaunchScreen.storyboard in Resources */,
 				AD10C91A1D4B5D7900E909B8 /* Assets.xcassets in Resources */,
@@ -326,6 +332,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC8893A1D61D0C100B32B1A /* Assets.xcassets in Resources */,
+				ADC8893D1D61D10200B32B1A /* aa.png in Resources */,
 				ADD3AB131D5C2F7C0062E634 /* ViewControllerxib.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

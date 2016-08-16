@@ -13,32 +13,8 @@
 		AD17C32B1D4F7F2C0059F584 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD17C3291D4F7F2C0059F584 /* Main.storyboard */; };
 		AD17C32D1D4F7F2C0059F584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD17C32C1D4F7F2C0059F584 /* Assets.xcassets */; };
 		AD17C3301D4F7F2C0059F584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD17C32E1D4F7F2C0059F584 /* LaunchScreen.storyboard */; };
-		AD765B011D4F86C0001C0C9E /* NavigationManagerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD765AFE1D4F86B4001C0C9E /* NavigationManagerFramework.framework */; };
+		ADC889341D61B8C200B32B1A /* NavigationManagerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC889331D61B8C200B32B1A /* NavigationManagerFramework.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AD765AFB1D4F86B4001C0C9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD765AF61D4F86B3001C0C9E /* NavigationManager-OC.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AD10C90A1D4B5D7900E909B8;
-			remoteInfo = "NavigationManager-OC";
-		};
-		AD765AFD1D4F86B4001C0C9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD765AF61D4F86B3001C0C9E /* NavigationManager-OC.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AD6C47511D4F45120008074D;
-			remoteInfo = NavigationManagerFramework;
-		};
-		AD765AFF1D4F86BB001C0C9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD765AF61D4F86B3001C0C9E /* NavigationManager-OC.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AD6C47501D4F45120008074D;
-			remoteInfo = NavigationManagerFramework;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AD17C31D1D4F7F2C0059F584 /* Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +27,7 @@
 		AD17C32C1D4F7F2C0059F584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD17C32F1D4F7F2C0059F584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD17C3311D4F7F2C0059F584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD765AF61D4F86B3001C0C9E /* NavigationManager-OC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "NavigationManager-OC.xcodeproj"; path = "../../NavigationManager-OC/NavigationManager-OC.xcodeproj"; sourceTree = "<group>"; };
+		ADC889331D61B8C200B32B1A /* NavigationManagerFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NavigationManagerFramework.framework; path = "../NavigationManager-OC/build/Debug-iphoneos/NavigationManagerFramework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD765B011D4F86C0001C0C9E /* NavigationManagerFramework.framework in Frameworks */,
+				ADC889341D61B8C200B32B1A /* NavigationManagerFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +45,7 @@
 		AD17C3141D4F7F2C0059F584 = {
 			isa = PBXGroup;
 			children = (
+				ADC889331D61B8C200B32B1A /* NavigationManagerFramework.framework */,
 				AD17C31F1D4F7F2C0059F584 /* Project2 */,
 				AD17C31E1D4F7F2C0059F584 /* Products */,
 			);
@@ -85,7 +62,6 @@
 		AD17C31F1D4F7F2C0059F584 /* Project2 */ = {
 			isa = PBXGroup;
 			children = (
-				AD765AF61D4F86B3001C0C9E /* NavigationManager-OC.xcodeproj */,
 				AD17C3231D4F7F2C0059F584 /* AppDelegate.h */,
 				AD17C3241D4F7F2C0059F584 /* AppDelegate.m */,
 				AD17C3261D4F7F2C0059F584 /* ViewController.h */,
@@ -107,15 +83,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AD765AF71D4F86B3001C0C9E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AD765AFC1D4F86B4001C0C9E /* NavigationManager-OC.app */,
-				AD765AFE1D4F86B4001C0C9E /* NavigationManagerFramework.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,7 +97,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				AD765B001D4F86BB001C0C9E /* PBXTargetDependency */,
 			);
 			name = Project2;
 			productName = Project2;
@@ -162,35 +128,12 @@
 			mainGroup = AD17C3141D4F7F2C0059F584;
 			productRefGroup = AD17C31E1D4F7F2C0059F584 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AD765AF71D4F86B3001C0C9E /* Products */;
-					ProjectRef = AD765AF61D4F86B3001C0C9E /* NavigationManager-OC.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AD17C31C1D4F7F2C0059F584 /* Project2 */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		AD765AFC1D4F86B4001C0C9E /* NavigationManager-OC.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "NavigationManager-OC.app";
-			remoteRef = AD765AFB1D4F86B4001C0C9E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AD765AFE1D4F86B4001C0C9E /* NavigationManagerFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = NavigationManagerFramework.framework;
-			remoteRef = AD765AFD1D4F86B4001C0C9E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AD17C31B1D4F7F2C0059F584 /* Resources */ = {
@@ -217,14 +160,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AD765B001D4F86BB001C0C9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NavigationManagerFramework;
-			targetProxy = AD765AFF1D4F86BB001C0C9E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AD17C3291D4F7F2C0059F584 /* Main.storyboard */ = {

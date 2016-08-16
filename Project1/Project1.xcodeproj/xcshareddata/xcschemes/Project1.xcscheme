@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD6C47501D4F45120008074D"
+               BuildableName = "NavigationManagerFramework.framework"
+               BlueprintName = "NavigationManagerFramework"
+               ReferencedContainer = "container:../NavigationManager-OC/NavigationManager-OC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "AD6C47691D4F47E70008074D"
                BuildableName = "Project1.app"
                BlueprintName = "Project1"
